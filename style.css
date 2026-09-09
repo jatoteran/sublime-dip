@@ -808,7 +808,8 @@ body {
 }
 
 .footer-links a,
-.footer-social a {
+.footer-social a,
+.footer-social span {
     color: var(--navy);
 
     text-decoration: none;
@@ -1032,14 +1033,6 @@ body {
     .final-cta h2 {
         font-size: 42px;
     }
-
-
-    /* PRODUCT IMAGES */
-
-    .product-image-placeholder {
-        min-height: 260px;
-    }
-
 
     /* OCCASIONS */
 
