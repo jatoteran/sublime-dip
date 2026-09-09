@@ -1,20 +1,17 @@
 :root {
     --navy: #0f1d4a;
-
     --cream: #f7f2e8;
-
     --warm-white: #fffaf3;
-
     --sage: #a8b18a;
-
     --olive: #78834b;
-
     --text-dark: #343434;
-
     --border-light: #d8cfbd;
-
     --white: #ffffff;
 }
+
+
+/* GENERAL */
+
 * {
     box-sizing: border-box;
 }
@@ -81,11 +78,12 @@ body {
 
 .nav-links {
     display: flex;
+
     gap: 30px;
 }
 
 .nav-links a {
-    color: white;
+    color: var(--white);
 
     text-decoration: none;
 
@@ -97,16 +95,17 @@ body {
 /* ORDER BUTTON */
 
 .order-button {
-    background-color: white;
+    padding: 12px 20px;
+
+    background-color: var(--white);
     color: var(--navy);
+
+    border-radius: 999px;
 
     text-decoration: none;
     font-weight: 700;
-
-    padding: 12px 20px;
-
-    border-radius: 999px;
 }
+
 
 /* HERO */
 
@@ -141,21 +140,21 @@ body {
 .hero h1 {
     margin: 20px 0;
 
+    color: var(--navy);
+
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: clamp(50px, 6vw, 78px);
     line-height: 1;
-
-    color: var(--navy);
 }
 
 .hero-description {
     max-width: 530px;
 
+    color: var(--text-dark);
+
     font-size: 18px;
     line-height: 1.7;
-
-    color: var(--text-dark);
 }
 
 .hero-actions {
@@ -180,7 +179,7 @@ body {
 
 .primary-button {
     background-color: var(--navy);
-    color: white;
+    color: var(--white);
 }
 
 .secondary-button {
@@ -232,7 +231,9 @@ body {
 
 .hero-placeholder span {
     color: var(--navy);
+
     font-family: Georgia, "Times New Roman", serif;
+
     font-size: clamp(32px, 5vw, 58px);
     font-weight: bold;
     letter-spacing: 2px;
@@ -241,12 +242,16 @@ body {
 .hero-placeholder p {
     margin: 0;
 
+    padding: 0 20px;
+
     color: var(--navy);
+
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
 
 /* PRODUCTS */
 
@@ -320,12 +325,14 @@ body {
 }
 
 .product-info {
-    padding: 32px;
+    padding: 30px;
+
     background-color: var(--cream);
 }
 
 .product-image {
     aspect-ratio: 4 / 3;
+
     overflow: hidden;
 }
 
@@ -337,17 +344,11 @@ body {
 
     object-fit: cover;
 
-    padding: 0;
-
     transition: transform 0.4s ease;
 }
 
 .product-card:hover .product-image img {
     transform: scale(1.04);
-}
-
-.product-info {
-    padding: 30px;
 }
 
 .product-number {
@@ -387,7 +388,7 @@ body {
     padding: 7px 12px;
 
     background-color: var(--navy);
-    color: white;
+    color: var(--white);
 
     border-radius: 999px;
 
@@ -395,13 +396,14 @@ body {
     font-weight: 600;
 }
 
+
 /* BENEFITS */
 
 .benefits {
     padding: 100px 0;
 
     background-color: var(--navy);
-    color: white;
+    color: var(--white);
 }
 
 .benefits-heading {
@@ -438,9 +440,9 @@ body {
 }
 
 .benefit-item:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-
     margin-right: 30px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .benefit-number {
@@ -471,6 +473,7 @@ body {
     line-height: 1.7;
 }
 
+
 /* ABOUT BRAND */
 
 .about-brand {
@@ -492,12 +495,12 @@ body {
 .about-brand-text h2 {
     margin: 0 0 30px;
 
+    color: var(--navy);
+
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: 52px;
     line-height: 1.1;
-
-    color: var(--navy);
 }
 
 .about-brand-text > p:not(.section-label) {
@@ -517,15 +520,15 @@ body {
     justify-content: center;
 
     background-color: #c8734f;
+    color: var(--white);
 
     border-radius: 30px;
-
-    color: white;
 
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 
 /* OCCASIONS */
 
@@ -544,12 +547,12 @@ body {
 .occasions-heading h2 {
     margin: 0;
 
+    color: var(--navy);
+
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: 52px;
     line-height: 1.1;
-
-    color: var(--navy);
 }
 
 .occasions-grid {
@@ -561,11 +564,11 @@ body {
 }
 
 .occasion-card {
+    overflow: hidden;
+
     background-color: var(--cream);
 
     border-radius: 22px;
-
-    overflow: hidden;
 }
 
 .occasion-image-placeholder {
@@ -576,7 +579,6 @@ body {
     justify-content: center;
 
     background-color: var(--sage);
-
     color: var(--navy);
 
     font-size: 12px;
@@ -587,11 +589,11 @@ body {
 .occasion-card h3 {
     margin: 25px 25px 10px;
 
+    color: var(--navy);
+
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: 28px;
-
-    color: var(--navy);
 }
 
 .occasion-card p {
@@ -601,6 +603,7 @@ body {
 
     line-height: 1.7;
 }
+
 
 /* BUSINESS */
 
@@ -616,9 +619,9 @@ body {
 
     grid-template-columns: 1.2fr 0.8fr;
 
-    gap: 90px;
-
     align-items: center;
+
+    gap: 90px;
 }
 
 .business-label {
@@ -657,7 +660,7 @@ body {
     padding: 14px 22px;
 
     background-color: var(--navy);
-    color: white;
+    color: var(--white);
 
     border-radius: 999px;
 
@@ -711,11 +714,14 @@ body {
     font-weight: 700;
 }
 
+
+/* FINAL CTA */
+
 .final-cta {
     padding: 120px 0;
 
     background-color: var(--navy);
-    color: white;
+    color: var(--white);
 
     text-align: center;
 }
@@ -761,6 +767,7 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
+
 
 /* FOOTER */
 
@@ -840,6 +847,7 @@ body {
     font-size: 13px;
 }
 
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -847,116 +855,138 @@ body {
 @media (max-width: 900px) {
 
     .header-content {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
 
-    padding: 20px 0;
+        padding: 20px 0;
+    }
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 50px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 10vw, 68px);
+    }
+
+    .hero-description {
+        max-width: 650px;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        aspect-ratio: 16 / 10;
+    }
+
+
+    /* PRODUCTS */
+
+    .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .section-description {
+        max-width: 550px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* BENEFITS */
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-item {
+        padding: 30px 0;
+    }
+
+    .benefit-item:not(:last-child) {
+        margin-right: 0;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .benefit-number {
+        margin-bottom: 20px;
+    }
+
+
+    /* ABOUT */
+
+    .about-brand-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-image-placeholder {
+        min-height: 400px;
+    }
+
+
+    /* OCCASIONS */
+
+    .occasions-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* BUSINESS */
+
+    .business-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
 }
 
-.nav-links {
-    order: 3;
-
-    width: 100%;
-
-    justify-content: center;
-
-    gap: 20px;
-}
-
-.hero {
-    padding: 70px 0;
-}
-
-.hero-content {
-    flex-direction: column;
-
-    align-items: stretch;
-
-    gap: 50px;
-}
-
-.hero-text {
-    max-width: 100%;
-}
-
-.hero h1 {
-    font-size: clamp(48px, 10vw, 68px);
-}
-
-.hero-description {
-    max-width: 650px;
-}
-
-.hero-image {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-}
-
-.section-heading {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 20px;
-}
-
-.section-description {
-    max-width: 550px;
-}
-
-.products-grid {
-    grid-template-columns: 1fr;
-}
-
-.benefits-grid {
-    grid-template-columns: 1fr;
-}
-
-.benefit-item {
-    padding: 30px 0;
-}
-
-.benefit-item:not(:last-child) {
-    margin-right: 0;
-
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.benefit-number {
-    margin-bottom: 20px;
-}
-
-.about-brand-content {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-}
-
-.about-image-placeholder {
-    min-height: 400px;
-}
-
-.occasions-grid {
-    grid-template-columns: 1fr;
-}
-
-.business-content {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-}
-
-.footer-content {
-    grid-template-columns: 1fr 1fr;
-
-    gap: 40px;
-}
-
-.footer-brand {
-    grid-column: 1 / -1;
-}
-
-}
 
 @media (max-width: 600px) {
 
@@ -968,17 +998,20 @@ body {
     /* HEADER */
 
     .brand-logo {
-    width: 65px;
-    height: 65px;
+        width: 65px;
+        height: 65px;
     }
 
     .order-button {
         padding: 10px 16px;
+
         font-size: 14px;
     }
 
     .nav-links {
         gap: 16px;
+
+        flex-wrap: wrap;
     }
 
     .nav-links a {
@@ -1003,11 +1036,8 @@ body {
     .primary-button,
     .secondary-button {
         width: 100%;
-        text-align: center;
-    }
 
-    .hero-image-placeholder {
-        min-height: 320px;
+        text-align: center;
     }
 
 
@@ -1034,6 +1064,14 @@ body {
         font-size: 42px;
     }
 
+
+    /* ABOUT */
+
+    .about-image-placeholder {
+        min-height: 300px;
+    }
+
+
     /* OCCASIONS */
 
     .occasion-image-placeholder {
@@ -1057,5 +1095,4 @@ body {
     .footer-brand {
         grid-column: auto;
     }
-
 }
